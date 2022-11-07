@@ -1,5 +1,5 @@
-create database if not exists BDSeguradora;
-use BDSeguradora;
+create database if not exists BDSeguradora3;
+use BDSeguradora3;
 
 #Criando tabelas
 create table if not exists pessoas(
@@ -72,9 +72,9 @@ licenca int not null,
 data date not null,
 idpessoa int not null primary key,
 
-foreign key (idpessoa) references pessoas(idpessoa),
+foreign key (idpessoa) references acidentes(idpessoa),
 foreign key (data) references acidentes(data),
-foreign key (licenca) references proprietarios(licenca)
+foreign key (licenca) references automoveis(licenca)
 
 );
 
