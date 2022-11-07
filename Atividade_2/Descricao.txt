@@ -1,0 +1,2 @@
+Atividade para ser entregue no dias 11 de Novembro.
+Baseada em mysql
